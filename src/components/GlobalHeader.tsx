@@ -1,13 +1,17 @@
+import Link from "next/link"
+
 const GlobalHeader = () => {
     return (
         <>
             <header
                 style={{
                     backgroundColor: "lightblue",
-                    padding: "1rem"
+                    padding: "1rem",
+                    fontSize: "30px"
                 }}
             >
-			    <p>Header</p>
+			    <Link href='/blog'>Blogs |</Link>
+                <Link href='/products'>Products |</Link>
             </header>
         </>
     )
