@@ -8,7 +8,7 @@ const GlobalFooter = () => {
                 }}
 		    >
                 <p>
-                    Footer
+                    Copyright 2024
                 </p>
 		    </footer>
         </>
