@@ -16,8 +16,8 @@ const Products = () => {
             {
                 [1, 2, 3].map((productId) => {
                     return (
-                        <li>
-                            <Link href={`products/${productId}`}>
+                        <li key={productId}>
+                            <Link href={`products/${productId}`} key={productId}>
                                 Product {productId}
                             </Link>
                         </li>
@@ -27,7 +27,7 @@ const Products = () => {
             <li>
                 {/* Replace prop replaces the current history state
                     instaed of adding a new URL to the stack */}
-                <Link href={`products/${staticProductId}`} replace>
+                <Link key={staticProductId} href={`products/${staticProductId}`} replace>
                     Product {staticProductId}
                 </Link>
             </li>
